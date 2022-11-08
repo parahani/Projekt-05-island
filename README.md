@@ -1,4 +1,4 @@
-# Projekt-03-island
+# Projekt-05-island
 
 Cílem je vytvořit responzivní stránku, která je zaměřená na Island.
 
