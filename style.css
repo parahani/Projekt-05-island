@@ -15,21 +15,76 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
+    
 }
 
 
 /* HLAVICKA */
+
+header {
+    text-align: center;
+    background: url(/Projekt-05-island/images/island-hlavicka.jpg) center center no-repeat;
+    background-size: cover; 
+    color: white;
+    padding: 10%;
+}
 
 .titulek {
     font-family: 'Raleway', serif;
 }
 
 
+.autor{
+    opacity: 50%;
+}
+
+.autor::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    right: 0;
+    left: 0;
+    margin:auto;
+
+}
+
+
+
+
+
 /* MENU */
 
+.menu{
+    list-style: none;
+    opacity: 50%;
 
+}
 
+.menu a{
+    color:black;
+    text-decoration: none;}
 
+/*MENU mobil*/
+
+@media (max-width: 500px) {
+    .menu{
+        text-align:center;
+    }
+    
+}
+
+/*MENU tablet*/
+@media (min-width: 500px) and
+        (max-width: 1000px) {
+
+        }
+
+  /*MENU pc*/
+@media (min-width: 1000px) {    
+    
+}
 /* OBSAH */
 
 
