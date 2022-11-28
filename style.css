@@ -35,7 +35,9 @@ header {
 
 
 .autor{
+    position: relative;
     opacity: 50%;
+    padding-top: 15px;
 }
 
 .autor::before{
@@ -46,7 +48,9 @@ header {
     background-color: white;
     right: 0;
     left: 0;
-    margin:auto;
+    top: 0;
+    margin: auto;
+    position: absolute;
 
 }
 
