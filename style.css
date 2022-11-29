@@ -23,10 +23,26 @@ body {
 
 header {
     text-align: center;
-    background: url(/Projekt-05-island/images/island-hlavicka.jpg) center center no-repeat;
+    background: url(images/island-hlavicka.jpg) center center no-repeat;
     background-size: cover; 
     color: white;
     padding: 10%;
+    position:relative;
+    z-index: 1;
+}
+
+header::before{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content:'';
+    width: 100%;
+    height: 100%;
+    display:block;
+    opacity: 20%;
+    background-color: black;
+    position:absolute;
+    display: block;
 }
 
 .titulek {
