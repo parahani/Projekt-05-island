@@ -9,12 +9,11 @@
 
     
  body {
-    padding: 0;
+    margin:auto;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
-
 }
 
 
@@ -69,9 +68,7 @@ header::before{
 
 }
 
-.body{
-    margin: 0 20px;
-}
+
 
 .perex {
     padding-bottom: 20px;
@@ -92,7 +89,7 @@ header::before{
     color:black;
     text-decoration: none;}
 
-/*OBSAH mobil*/
+/*MENU mobil*/
 
 @media (max-width: 500px) {
     .menu{
@@ -106,31 +103,28 @@ header::before{
         padding: 8px;
         border-bottom: 1px solid #cccc;
     }
+   
     
-    .popisek{
-        text-align: center;
-        color: grey;
-        margin-top: 10px;
-    }
-    .popisek a{
-        text-decoration: underline;
-        color: grey;
-    }
+   
     }
     
 
 
-/*OBSAH tablet*/
+/*MENU tablet*/
 @media (min-width: 500px) and
         (max-width: 1000px) {
 
         }
 
-  /*OBSAH pc*/
+  /*MENU pc*/
 @media (min-width: 1000px) {    
     
 }
 /* OBSAH */
+
+.body{
+    
+}
 
 img{
     max-width: 100%;
@@ -158,6 +152,27 @@ h2::after{
 
 }
 
+.popisek{
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+}
+.popisek a{
+    text-decoration: underline;
+    color: grey;
+}
+
+/*OBSAH tablet*/
+@media (min-width: 500px) and
+        (max-width: 1000px) {
+
+        }
+
+  /*OBSAH pc*/
+@media (min-width: 1000px) {    
+    
+}
+
 /* FOTOGALERIE */
 
 .galerie{
@@ -170,10 +185,26 @@ h2::after{
     display: block;
 }
 
-/*jak udělat bold jen p class a ne p span class*/
+p.popisek { 
+    font-weight: bold;
+ }
+p.popisek span.popisek-copy { 
+    font-weight: normal;
+ }
+
+
+/*FOTOGALERIE mobil*/
+
+@media (max-width: 500px) {
+.foto {
+    display:flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+}
 
 /*jak zrušit margin u obrázků, ale nechat u obsahu*/
 
-/*jak zvětšit ty fakin fotky z fotogalerie*/
 
 /* PATICKA */
+
