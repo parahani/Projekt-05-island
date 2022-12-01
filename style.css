@@ -40,17 +40,20 @@ header::before{
     opacity: 30%;
     background-color: black;
     position:absolute;
-    display: block;
 }
 
 .titulek {
     font-family: 'Raleway', serif;
 }
 
+h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
 
 .autor{
     position: relative;
-    opacity: 50%;
+    opacity: 70%;
     padding-top: 15px;
 }
 
@@ -72,6 +75,7 @@ header::before{
 
 .perex {
     padding-bottom: 20px;
+
 }
 
 
@@ -81,7 +85,7 @@ header::before{
 .menu{
     list-style: none;
     opacity: 50%;
-    font-family: sans-serif;
+    font-family: Raleway;sans-serif;
 
 }
 
@@ -122,20 +126,22 @@ header::before{
 }
 /* OBSAH */
 
-.body{
-    
+.body {
+    padding-left: 20px;
 }
 
 img{
     max-width: 100%;
     height:auto;
     display: block;
+    margin: 40px 0;
 }
 
 
 h2{
     padding-top: 30px;
     padding-bottom: 20px;
+    font-family: Raleway; sans-serif;
 
 }
 
@@ -147,7 +153,7 @@ h2::after{
     background-color: rgb(97 158 223);
     margin: 0 0;
     position: relative;
-    top: 20px;
+    top: 15px;
     left: 0;
 
 }
@@ -156,6 +162,8 @@ h2::after{
     text-align: center;
     color: grey;
     margin-top: 10px;
+    font-family: Raleway; sans-serif;
+    font-size: smaller;
 }
 .popisek a{
     text-decoration: underline;
@@ -185,7 +193,7 @@ h2::after{
     display: block;
 }
 
-p.popisek { 
+.galerie p.popisek { 
     font-weight: bold;
  }
 p.popisek span.popisek-copy { 
@@ -207,4 +215,19 @@ p.popisek span.popisek-copy {
 
 
 /* PATICKA */
+
+footer{
+    color:grey;
+    font-size: x-small;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.5));
+    padding: 15px 20px;
+
+}
+
+footer a{
+    text-decoration: underline;
+    color: grey;
+    
+}
+
 
