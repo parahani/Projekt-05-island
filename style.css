@@ -285,6 +285,7 @@ h2::after{
 
     .obsah{
         margin: 0 150px;
+        max-width: 960px;
         position: relative;
         top: -60px;
         background-color: white;
