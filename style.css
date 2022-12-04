@@ -148,25 +148,18 @@ h1{
     li{
         padding: 8px;
         border-bottom: 1px solid #cccc;
-
     }
 
     .menu{
         float: left;
         padding-right: 20px;
-
+        white-space: nowrap;
     }
    
     
 }
 
 /* OBSAH */
-
-/*už nevím, na co tohle bylo
-.body {
-    padding-left: 20px;
-}
-*/
 
 img{
     max-width: 100%;
@@ -209,7 +202,7 @@ h2::after{
 
 .popisek{
     color: grey;
-    font-family: Raleway; sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: smaller;
 }
 .popisek a{
@@ -350,17 +343,41 @@ p.popisek span.popisek-copy {
 @media (min-width: 500px) and
         (max-width: 1000px) {
     
-    .foto img{
+    .foto {
         float: left;
         width: 50%;
-        overflow: auto;  
+        overflow: hidden;
+        position: relative;
+        }
+    
+    .galerie .foto p.popisek{
+        width:100%;
+        text-align: center;
+        margin: 0 0;
+        padding: 0 0;
+        }
+    
+        .foto img{
+            width: 100%;
+            padding-top: 0;
+            transition: 0.3s;
+            display: block;
+           
+        }
+    
+        .galerie p.popisek{
+            width: 33.333%;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+            position: absolute;
+        }
+    
+        .foto:hover .popisek{
+            transform: translateY(-100%);
         }
 
-    .foto p.popisek,
-    .foto p.popisek-copy{
-        
-    }
-    
+
+
 }
 
 /*FOTOGALERIE pc*/
@@ -368,23 +385,38 @@ p.popisek span.popisek-copy {
 @media (min-width: 1000px) {
 
   .foto{
-    float: left;
-    width: 33.333%;
+        float: left;
+        width: 33.333%;
+        overflow: hidden;
+        position: relative;
     }
 
-    .foto p.popisek{
+    .galerie .foto p.popisek{
+        width:100%;
         text-align: center;
         margin: 0 0;
         padding: 0 0;
     }
 
     .foto img{
+        width: 100%;
         padding-top: 0;
+        transition: 0.3s;
+        display: block;
+       
+    }
+
+    .galerie p.popisek{
+        width: 33.333%;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 0.3s;
+        position: absolute;
+    }
+
+    .foto:hover .popisek{
+        transform: translateY(-100%);
     }
 }
-
-/*jak zrušit margin u obrázků, ale nechat u obsahu*/
-
 
 /* PATICKA */
 
@@ -433,6 +465,7 @@ footer{
         font-size: x-small;
         padding: 15px 20px;
         clear:left;
+        padding-top: 50px;
     
     }
     
